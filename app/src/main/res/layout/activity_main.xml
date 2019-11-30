@@ -9,80 +9,127 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:textSize="20sp"
         android:gravity="center"
-        android:text="로그인 화면"/>
+        android:text="로그인 화면"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:padding="20dp"/>
 
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ID 입력"
-        android:background="#AAEADD"/>
+        android:gravity="center"
+        android:layout_marginTop="40dp">
 
-    <EditText
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitXY"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="이메일 양식으로 입력"
-        android:inputType="textEmailAddress"/>
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="비번입력"
-        android:background="#AAEADD"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="숫자 입력"
-        android:inputType="numberPassword"/>
+        <TextView
 
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="일반 회원"/>
 
-        <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="ID 입력"/>
+
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="VIP 회원"/>
-
-        <RadioButton
-            android:layout_width="wrap_content"
+            android:hint="이메일 양식으로 입력"
+            android:inputType="textEmailAddress"/>
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="VVIP 회원"/>
+            android:layout_marginTop="15dp"
+            android:text="비번입력" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="숫자 입력"/>
+
+        <RadioGroup
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="일반 회원"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIP 회원"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VVIP 회원"/>
 
 
 
-    </RadioGroup>
+        </RadioGroup>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="자동 로그인"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="푸시알림 On/Off"/>
+
+
+        </LinearLayout>
 
 
 
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="자동 로그인"/>
 
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="푸시알림 On/Off"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인"/>
 
+    </LinearLayout>
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="로그인"/>
+
+
 
 </LinearLayout>
 
