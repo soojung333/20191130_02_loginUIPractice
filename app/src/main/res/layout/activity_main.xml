@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:text="ID 입력"/>
 
         <EditText
@@ -65,18 +65,21 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="숫자 입력"/>
+            android:hint="숫자 입력"
+            android:inputType="textPassword"/>
 
         <RadioGroup
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             >
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="일반 회원"/>
+                android:text="일반 회원"
+               />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -86,7 +89,8 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="VVIP 회원"/>
+                android:text="VVIP 회원"
+                android:visibility="gone"/>
 
 
 
@@ -105,7 +109,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="자동 로그인"/>
+                android:text="자동 로그인"
+                android:paddingRight="50dp"/>
 
             <Switch
                 android:layout_width="wrap_content"
@@ -116,14 +121,31 @@
         </LinearLayout>
 
 
-
-
-
-        <Button
+        <LinearLayout
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="로그인"/>
+            android:orientation="horizontal">
+
+            <Button
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="회원가입"/>
+            <Button
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="로그인"/>
+
+
+        </LinearLayout>
+
+
+
+
 
     </LinearLayout>
 
